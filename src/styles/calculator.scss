@@ -1,0 +1,86 @@
+@import './variables.scss';
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; // Fonte futurista
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: linear-gradient(145deg, #1a1a1a, #292929);
+  border-radius: 15px;
+  padding: 25px;
+  width: 380px;
+  box-shadow: 0 0 25px $glow-effect;
+  text-align: center;
+
+  .display {
+    font-size: 2.5rem;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    background: $secondary-color;
+    color: $primary-color;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px $button-shadow;
+    border: 2px solid $primary-color;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+
+    .button {
+      background: $primary-color;
+      color: $text-color;
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-shadow: 0 0 5px $glow-effect;
+      box-shadow: 0 4px 15px $button-shadow;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background: $button-hover-color;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px $glow-effect;
+      }
+
+      &:active {
+        transform: scale(0.95);
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    // Botões especiais para "=" e "C"
+    #equals {
+      grid-column: span 2;
+      background: #ff9800;
+      box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+
+      &:hover {
+        background: lighten(#ff9800, 10%);
+        box-shadow: 0 6px 20px rgba(255, 152, 0, 0.8);
+      }
+    }
+
+    #clear {
+      background: #ff1744;
+      box-shadow: 0 4px 15px rgba(255, 23, 68, 0.5);
+
+      &:hover {
+        background: lighten(#ff1744, 10%);
+        box-shadow: 0 6px 20px rgba(255, 23, 68, 0.8);
+      }
+    }
+  }
+}
