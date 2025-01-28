@@ -36,5 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://JulioCesar-X.github.io/react-modern-calculator"
+  "homepage": "https://JulioCesar-X.github.io/react-modern-calculator",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
