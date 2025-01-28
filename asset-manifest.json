@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-modern-calculator/static/css/main.677348a8.css",
+    "main.js": "/react-modern-calculator/static/js/main.c8ab4c6c.js",
+    "index.html": "/react-modern-calculator/index.html",
+    "main.677348a8.css.map": "/react-modern-calculator/static/css/main.677348a8.css.map",
+    "main.c8ab4c6c.js.map": "/react-modern-calculator/static/js/main.c8ab4c6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.677348a8.css",
+    "static/js/main.c8ab4c6c.js"
+  ]
+}
